@@ -137,3 +137,18 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Dataset
+dataset/tmdb_5000_movies.csv
+dataset/tmdb_5000_credits.csv
+
+# Venv
+venv
+**/venv
+.venv
+
+# Pycache
+*.pyc
+
+# Workbench (pasta de teste)
+workbench

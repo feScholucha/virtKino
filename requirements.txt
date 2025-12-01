@@ -1,0 +1,7 @@
+edge_tts==7.2.3
+fastapi==0.123.0
+faster_whisper==1.2.0
+numpy==2.3.5
+ollama==0.6.1
+pandas==2.3.3
+uvicorn==0.38.0

@@ -1,0 +1,92 @@
+:root {
+  --bg-color: #0a0a12;
+  --text-color: #e0e0e0;
+  --accent-color: #00ff9d;
+  --secondary-color: #bd00ff;
+  --panel-bg: #151520;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-interface {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify_content: center;
+  border-right: 2px solid #333;
+}
+
+.avatar-container {
+  width: 400px;
+  height: 400px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(0, 255, 157, 0.2));
+  transition: transform 0.3s;
+}
+
+.state-speaking .avatar-img { animation: bounce 0.2s infinite alternate; }
+@keyframes bounce { to { transform: translateY(-10px); } }
+
+.status-badge {
+  margin-top: 10px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background: #333;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+.status-badge.active { background: var(--accent-color); color: black; box-shadow: 0 0 10px var(--accent-color); }
+
+.chat-box {
+  margin-top: 20px;
+  min-height: 60px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  max-width: 80%;
+}
+
+.btn-ptt {
+  margin-top: 30px;
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: #333; border: 2px solid #555;
+  color: white; font-size: 2rem; cursor: pointer;
+  display: flex; align-items: center; justify_content: center;
+  transition: all 0.2s;
+}
+.btn-ptt.recording { background: #d32f2f; border-color: white; box-shadow: 0 0 20px #d32f2f; transform: scale(1.1); }
+.btn-ptt:disabled { opacity: 0.3; cursor: not-allowed; }
+
+/* Debug Panel */
+.debug-panel {
+  width: 400px;
+  background: var(--panel-bg);
+  padding: 20px;
+  font-family: monospace;
+  overflow-y: auto;
+  box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+}
+.debug-section { margin-bottom: 20px; border-left: 2px solid #444; padding-left: 10px; }
+.debug-label { font-size: 0.8rem; color: #888; display: block; margin-bottom: 5px; }
+.json-block { background: black; padding: 10px; border-radius: 5px; color: #a5b3ce; white-space: pre-wrap; font-size: 0.8rem; }

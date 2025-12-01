@@ -1,8 +1,9 @@
 # virtKino: Recomendador de Filmes Conversacional
-<img src="static/idle.png" alt="Kino" width="60%">\
+<img src="static/idle.png" alt="Kino" width="60%">
+
 ## Sobre o Projeto
 O virtKino é um sistema de recomendação de filmes interativo e didático que utiliza um avatar "animado" como interface de comunicação verbal.\
-O objetivo é desmistificar o funcionamento de IAs generativas e Sistemas de Recomendação, expondo o "raciocínio" da máquina em tempo real através de um Painel de Debug.
+O objetivo é desmistificar o funcionamento de IAs generativas e de Sistemas de Recomendação, expondo o "raciocínio" da máquina por meio de um Painel de Debug.
 
 ## Como Funciona (Arquitetura)
 
